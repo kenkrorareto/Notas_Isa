@@ -1,0 +1,101 @@
+@import url("https://fonts.cdnfonts.com/css/child-witch");
+
+body {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 179, 0, 1) 25%,
+      rgba(255, 255, 0, 1) 50%,
+      rgba(255, 179, 0, 1) 75%,
+      rgba(255, 255, 0, 1) 100%
+    )
+    center center fixed;
+  background-size: cover;
+}
+
+:root {
+  --light-gray: #a8a6a6;
+  --h1-font-size: 6em;
+  --h2-font-size: 0.5em;
+  --li-h1-margin: 0vw 0vw 4vw 0vw;
+  --li-h2-margin: 1vw;
+  --li-h2-padding: 1vw;
+  --info-margin: 2vw;
+  --back-padding: 0em 2em;
+}
+
+.navtop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 113, 121, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.navicon {
+  float: left;
+}
+
+.navicon a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5vw 0.5vw;
+  text-decoration: none;
+}
+
+.navicon a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.back {
+  background-color: #b5b5b575;
+  margin: var(--info-margin);
+  border-radius: 2em;
+  padding: var(--back-padding);
+}
+
+.info {
+  color: #151515;
+  font-family: "Child Witch";
+}
+
+li.h1 {
+  font-size: var(--h1-font-size);
+  margin: var(--li-h1-margin);
+}
+
+li.h2 {
+  font-size: var(--h2-font-size);
+  margin: var(--li-h2-margin);
+  padding: var(--li-h2-padding);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vw;
+  width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --h1-font-size: 4em;
+    --h2-font-size: 0.5em;
+    --back-padding: 0em 1em;
+  }
+
+  img {
+    width: 90%;
+  }
+}

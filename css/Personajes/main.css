@@ -1,0 +1,94 @@
+@import url("https://fonts.cdnfonts.com/css/bloody");
+
+:root {
+  --dark-gray: #212121;
+  --dark-red: #7a0606;
+  --light-red: #dc4c4c2b;
+  --dark-purple: #3e0842;
+  --font-size-big: 4em;
+  --font-size-normal: 3em;
+  --font-size-small: 1em;
+  --padding-top: 0.5vw 0.5vw;
+  --padding-pjs: 1vw 3vw;
+  --margin-h1: 3vh 0vw;
+  --margin-pjs-a: 2vh 6vw;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --font-size-big: 4em;
+    --font-size-normal: 3em;
+    --font-size-small: 1em;
+    --padding-top: 0.5vw 0.5vw;
+    --padding-pjs: 1vw;
+    --margin-h1: 3vh 0vw;
+    --margin-pjs-a: 2vh 2vw;
+  }
+}
+
+body {
+  background: url(../../images/background_players.jpg) no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.navtop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(2, 88, 105) 100%
+  );
+  font-size: var(--font-size-small);
+}
+
+.navicon {
+  float: left;
+}
+
+.navicon a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: var(--padding-top);
+  text-decoration: none;
+}
+
+.navicon a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.players {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bloody";
+  font-size: var(--font-size-big);
+  color: var(--dark-gray);
+  margin: var(--margin-h1)
+}
+
+.pjs a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Bloody";
+  font-size: var(--font-size-normal);
+  color: var(--dark-red);
+  margin: var(--margin-pjs-a);
+  background-color: var(--light-red);
+  padding: var(--padding-pjs);
+  border-radius: 0.5vw;
+}
+
+hr {
+  margin: 2vw 0.5vw;
+  border: 0.3vh solid var(--dark-purple);
+}

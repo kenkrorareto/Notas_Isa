@@ -1,0 +1,120 @@
+@import url("https://fonts.cdnfonts.com/css/bloody");
+
+:root {
+  --light-gray: #5f5f5f;
+  --top_img_height: 15vw;
+  --bottom_img_height: 15vw;
+  --h1_font_size: 3vw;
+  --yakuza_gradient_direction: to left;
+  --casa_nostra_gradient_direction: to right;
+  --mafia_china_gradient_direction: to bottom;
+  --bottom_display: flex;
+}
+
+body {
+  background: radial-gradient(
+      circle,
+      rgba(80, 79, 93, 1) 0%,
+      rgba(42, 41, 46, 1) 25%,
+      rgba(78, 62, 62, 1) 50%,
+      rgba(18, 16, 18, 1) 75%,
+      rgba(0, 0, 0, 1) 100%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navtop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(2, 88, 105) 100%
+  );
+}
+
+.navicon {
+  float: left;
+}
+
+.navicon a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5vw 0.5vw;
+  text-decoration: none;
+}
+
+.navicon a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.top {
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.top div {
+  margin: 0.5vw 15vw;
+}
+
+.top img {
+  height: var(--top_img_height);
+}
+
+.bottom img {
+  height: var(--bottom_img_height);
+}
+
+.bottom {
+  box-sizing: border-box;
+  display: var(--bottom_display);
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Bloody";
+  font-size: var(--h1_font_size);
+  color: var(--light-gray);
+}
+
+.yakuza img {
+  mask-image: linear-gradient( var(--yakuza_gradient_direction), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.casa_nostra img {
+  mask-image: linear-gradient( var(--casa_nostra_gradient_direction), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.mafia_china img {
+  mask-image: linear-gradient( var(--mafia_china_gradient_direction), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --light-gray: #5f5f5f;
+    --top_img_height: 15vh;
+    --bottom_img_height: 15vh;
+    --h1_font_size: 2em;
+    --yakuza_gradient_direction: to top;
+    --casa_nostra_gradient_direction: circle;
+    --mafia_china_gradient_direction: to bottom;
+  }
+
+  .top {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 1vh;
+  }
+}

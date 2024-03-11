@@ -1,0 +1,83 @@
+@import url("https://fonts.cdnfonts.com/css/bloody");
+
+body {
+  background: url(../../images/background_sects.jpg) no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+:root {
+  --light-gray: #a8a6a6;
+  --font-size: 4em;
+  --img_height: 25vw;
+}
+
+.navtop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 113, 121, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.navicon {
+  float: left;
+}
+
+.navicon a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5vw 0.5vw;
+  text-decoration: none;
+}
+
+.navicon a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.sects {
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.sects div {
+  padding: 2vw;
+}
+
+img {
+  height: var(--img_height);
+  mask-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+h1 {
+  font-family: "Bloody";
+  font-size: var(--font-size);
+  color: var(--light-gray);
+  margin: 3vw 0vw;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --font-size: 3em;
+    --img_height: 30vh;
+  }
+
+  .sects {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 1vh;
+  }
+}

@@ -6,7 +6,7 @@
   --bottom_img_height: 15vw;
   --h1_font_size: 3vw;
   --yakuza_gradient_direction: to left;
-  --casa_nostra_gradient_direction: to right;
+  --cosa_nostra_gradient_direction: to right;
   --mafia_china_gradient_direction: to bottom;
   --bottom_display: flex;
 }
@@ -92,8 +92,8 @@ h1 {
   mask-image: linear-gradient( var(--yakuza_gradient_direction), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.casa_nostra img {
-  mask-image: linear-gradient( var(--casa_nostra_gradient_direction), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+.cosa_nostra img {
+  mask-image: linear-gradient( var(--cosa_nostra_gradient_direction), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .mafia_china img {
@@ -107,7 +107,7 @@ h1 {
     --bottom_img_height: 15vh;
     --h1_font_size: 2em;
     --yakuza_gradient_direction: to top;
-    --casa_nostra_gradient_direction: circle;
+    --cosa_nostra_gradient_direction: circle;
     --mafia_china_gradient_direction: to bottom;
   }
 
